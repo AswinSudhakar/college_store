@@ -1,0 +1,173 @@
+<!--{% load static %}-->
+
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title >Form Page</title>-->
+<!--</head>-->
+<!--<body style="background-image: url({% static 'img/header.jpg' %});background-size:cover;background-repeat: no-repeat ;min-height:100vh; display:flex; align-items:center; justify-content:center;  ">-->
+<!--<div class="container" style="position:relative; max-width:900px; width:100%; background-color:#fff; border-radius:6px; padding:30px; margin:0 15px;box-shadow:0 5px rgba(0,0,0,0.1) ">-->
+<!--<h2 style="text-align:center;color:black; font-size:40px; font-weight:600; ">Form</h2><br>-->
+
+
+<!--<form action="register" method="post" style="text-align:center; position:relative; min-height:390px; background-color:silver; margin-top:16px;  ">-->
+<!--    {% csrf_token %}-->
+
+<!--    <input type="text" name="name" placeholder="Name"><br>-->
+<!--    <input  type="date" name="dob" placeholder="dob"><br>-->
+<!--     <input type="number" name="age" placeholder="age"><br>-->
+<!--    <label for="Gender">Gender</label>-->
+<!--    <select id="Gender">-->
+<!--        <option value="Gender">select gender</option>-->
+<!--        <option value="Gender">Male</option>-->
+<!--        <option value="Gender">Female</option>-->
+<!--    </select><br>-->
+
+<!--     <input  type="number" name="number" placeholder="phone number"><br>-->
+<!--    <input  type="email" name="email" placeholder="mail id"><br>-->
+<!--     <input type="text" name="address" placeholder="address"><br>-->
+
+
+<!--  <label for="department">Department</label>-->
+<!--    <select id="department">-->
+<!--        <option value="department">select department</option>-->
+<!--        <option value="department" id="1">BSc</option>-->
+<!--        <option value="department" id="2">commerce</option>-->
+<!--    </select><br>-->
+
+
+
+
+
+
+<!--     <input  type="text" name="username" placeholder="purpose"><br>-->
+<!--    <input  type="password" name="password" placeholder="materials provide"><br>-->
+
+<!--    <input style="height:32px;font-size:22px;"  type="submit" value="Submit "><br>-->
+
+
+<!--</form>-->
+
+
+
+
+<!--</div>-->
+<!--</body>-->
+<!--</html>-->
+
+
+
+
+
+
+<Html>
+<head>
+<title>
+Form page
+</title>
+</head>
+<body bgcolor="Lightskyblue">
+<br>
+<br>
+<form>
+
+<label> Firstname </label>
+<input type="text" name="firstname" size="15"/> <br> <br>
+<label> Date Of Birth: </label>
+<input type="date" name="dob" size="15"/> <br> <br>
+<label> age: </label>
+<input type="number" name="age" size="15"/> <br> <br>
+
+    <label>
+Gender :
+</label><br>
+<input type="radio" name="male"/> Male <br>
+<input type="radio" name="female"/> Female <br>
+<input type="radio" name="other"/> Other
+<br>
+<br>
+<label>
+Phone :
+</label>
+<input type="text" name="country code"  value="+91" size="2"/>
+<input type="text" name="phone" size="10"/> <br> <br>
+
+    Email:
+<input type="email" id="email" name="email"/> <br>
+<br> <br>
+Address
+<br>
+<textarea cols="80" rows="5" value="address">
+</textarea>
+<br> <br>
+
+
+    <label>
+Department :
+</label>
+<select>
+<option value="Course">Department</option>
+<option value="BSc">BSc</option>
+<option value="Commerce">Commerce</option>
+
+</select>
+
+<br>
+<br>
+
+<label>
+Course :
+</label>
+<select>
+<option value="Course">Course</option>
+<option value="BCA">Electronics</option>
+<option value="BBA">Nursing</option>
+<option value="B.Tech">Agriculture</option>
+<option value="MBA">BCom</option>
+<option value="MCA">Biomedical Engineering</option>
+
+</select>
+
+<br>
+<br>
+
+
+  <label>
+Purpose :
+</label>
+<select>
+<option value="Purpose">Purpose</option>
+<option value="Enquiry">Enquiry</option>
+<option value="Place order">Place order</option>
+ <option value="Return">Return</option>
+
+</select>
+
+<br>
+<br>
+
+    <label >Materials provide</label><br>
+    <input type="checkbox" id="Materials provide1" name="Materials provide1" value="Notebook">
+<label for="Materials provide1"> Notebook</label><br>
+<input type="checkbox" id="Materials provide2" name="Materials provide2" value="Pen">
+<label for="Materials provide2"> Pen</label><br>
+<input type="checkbox" id="Materials provide3" name="Materials provide3" value="Exam Papers">
+<label for="Materials provide3"> Exam Papers</label><br>
+<input type="submit" value="Submit">
+<!--Password:-->
+<!--<input type="Password"  name="purpose"> <br>-->
+<!--<br> <br>-->
+<!--Re-type password:-->
+<!--<input type="Password" id="repass" name="repass"> <br> <br>-->
+<!--<input type="button" value="Submit"/>-->
+</form>
+</body>
+</html>
+
+
+<button type="button" class="btn btn-light"><a href="logout">Logout</a> </button>
+
+
+
+
